@@ -36,8 +36,7 @@ int Calculator::Calculate(int x, int y, char oper)
     case '/':
         return x / y;
     default:
-        cout << "\nIncorrect operation! Try again: ";
-        cin >> x >> oper >> y;
-        Calculate(x, y, oper);
+        cout << "\nIncorrect operation!";
+        return 0;
     }
 }
